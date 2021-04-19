@@ -1,4 +1,3 @@
-package javadxc;
 import java.util.*;
 
 public class treemapfrequency {
