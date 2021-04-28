@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>find word within string</title>
+</head>
+<script type="text/javascript">
+	function substr(id1,id2){
+		var s1=document.getElementById(id1).value;
+	    var s2=document.getElementById(id2).value;
+	    alert(s1.search(s2)?"found":" not found");
+	}
+
+</script>
+
+<body>
+<center>
+	<br><br><br><br><br><br>
+<input type="text" id="subM" placeholder="enter a string">
+<br><br>
+<input type="text" id="subS" placeholder="enter substring u wanna findout">
+<br><br>
+<input type="submit" onclick="substr('subM','subS')" value="findout" >
+</center>
+</body>
+</html>

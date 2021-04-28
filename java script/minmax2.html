@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Finding the second lowest and second greatest number from an array</title>
+<script type ="text/javascript">
+function minmax(list)
+{
+    list.sort();
+    var result = []
+    result.push(list[1],list[list.length-2]);
+    return result.join(',');
+}
+</script>
+</head>
+<body>
+<script type ="text/javascript">
+document.write(minmax([1,2,3,4,5]));
+</script>
+</body>
+</html>
