@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validator</title>
+</head>
+<script type="text/javascript">
+	function validate(){
+		var un=document.getElementById('uname').value;
+		var pa=document.getElementById('pwd').value;
+		if (un==""|| pa==""){
+			alert("credentials can't be empty");
+		}
+		else if (un.length<=2 || un.length>=30){
+				alert("length is not valid");
+			}
+
+			else if(!un.match('/^[A-Za-z]+$/'))
+				alert("no numerals and special symbols allowed");
+
+			else
+				document.write("username="+un+"<br>Password="+pa);
+			}
+
+			    
+</script>
+<body>
+<p>Register</p>
+<form>
+	Username:<input type="text"  id="uname"><br>
+	Password:<input type="Password" id="pwd"><br>
+	<input type="submit" onclick="validate()">
+</form>
+</body>
+</html>
